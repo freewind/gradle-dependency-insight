@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+// Set Bintray JCenter as repository.
+repositories.jcenter()
+
+dependencies {
+    // Set dependency for Spring Boot
+    compile "org.springframework.boot:spring-boot-starter-web:1.1.5.RELEASE"
+    
+    // Set dependency for SLF4J with conflicting version.
+    compile 'org.slf4j:slf4j-api:1.7.1'
+}
